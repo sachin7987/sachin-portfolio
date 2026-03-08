@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaEnvelope, FaFileDownload } from 'react-icons/fa';
 import './Hero.css';
-
+import imgPath from '../../public/potfolioImg.png'
 const Hero = () => {
   return (
     <section id="home" className="hero-section">
@@ -89,7 +89,7 @@ const Hero = () => {
         >
           <div className="hero-image-container">
             <img
-              src="/potfolioImg.png"
+              src={imgPath}
               alt="Sachin Rai Profile"
               className="hero-image"
               onError={(e) => {
